@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      button {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      #output {
+        position:fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 100%);
+      }
+
+      img {
+        position:fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -150%);
+      }
+
+      p {
+        position:fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -500%);
+      }
+      </style>
+      
+    <title>Document</title>
+  </head>
+
+  <body>
+    <p id="text">scan ne</p>
+    <button id="button">
+      bam nut ne
+    </button>
+    <div id="output"></div>
+    <img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t1.15752-9/367612130_2290123544529946_3706872904319802430_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=GhslkfDanyUAX-TGGdw&_nc_ht=scontent.fhan14-3.fna&oh=03_AdR-DlpoEO4aMejqfCapJomf-m37yjI-o3bCYrjKo8eB3A&oe=650B130E" style =" width: 10rem;">
+
+
+    <script>
+      const button = document.getElementById('button');
+      const stringsArray = ['thuy dien chao havzie', 'hope you the best in your new journey', 'see you soon in 4 months', 'to yeu cau NHAT THE GIOI'];
+      let index = 0;
+
+      button.addEventListener('click', (event) => {
+        if (index > 3) {
+          index = 0;
+        }
+        document.getElementById("output").innerHTML = stringsArray[index];
+        index++
+      })
+
+    </script>
+  </body>
+
+</html>
